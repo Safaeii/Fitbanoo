@@ -106,33 +106,16 @@ export default function Home() {
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-pink-200/50 dark:shadow-black/40 border-4 border-white dark:border-gray-800">
 
               <img
-                src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=1000&q=85"
+                src="/images/running-48.png"
                 alt="تمرین ورزشی در باشگاه"
                 className="w-full h-[400px] md:h-[500px] object-cover"
               />
-
-              {/* Image Overlay */}
-              <div className="absolute bottom-5 right-5 left-5 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md rounded-2xl p-4 flex items-center gap-4">
-
-                <div className="bg-pink-100 dark:bg-pink-500/20 p-3 rounded-xl">
-                  <Heart className="text-pink-500 dark:text-pink-300" size={25} />
-                </div>
-
-                <div>
-                  <p className="font-bold text-gray-800 dark:text-white">
-                    هر روز، یک قدم قوی‌تر
-                  </p>
-
-                  <p className="text-sm text-gray-500 dark:text-gray-300 mt-1">
-                    مسیر سلامتی از همین امروز شروع می‌شه.
-                  </p>
-                </div>
 
               </div>
             </div>
           </div>
 
-        </div>
+    
         <ClassesSection/>
         <TrainersSection/>
       </section>

@@ -32,7 +32,7 @@ export default function Header() {
             مربیان
           </Link>
 
-          <Link href="/about" className="hover:text-pink-500 dark:hover:text-pink-300 transition">
+          <Link href="/About" className="hover:text-pink-500 dark:hover:text-pink-300 transition">
             درباره ما
           </Link>
         </nav>
