@@ -1,0 +1,108 @@
+
+
+export const trainers = [
+  {
+    id: 1,
+    name: "سارا محمدی",
+    specialty: "مربی بدنسازی",
+    experience: "۵ سال سابقه",
+    rating: 4.9,
+    students: "۱۲۰+",
+    image:
+      "/images/fitness-1-44.png",
+    skills: ["بدنسازی", "تمرین قدرتی"],
+    description: "مربی حرفه‌ای بدنسازی و تمرینات قدرتی",
+    schedule: ["شنبه", "دوشنبه", "چهارشنبه"],
+  },
+  {
+    id: 2,
+    name: "نگار احمدی",
+    specialty: "مربی یوگا",
+    experience: "۴ سال سابقه",
+    rating: 4.8,
+    students: "۹۰+",
+    image:
+     "/images/note-taking-10.png",
+    skills: ["یوگا", "انعطاف‌پذیری"],
+    description: "مربی یوگا و تمرینات انعطاف‌پذیری",
+    schedule: ["یکشنبه", "سه‌شنبه"],
+  },
+  {
+    id: 3,
+    name: "مریم رضایی",
+    specialty: "مربی پیلاتس",
+    experience: "۶ سال سابقه",
+    rating: 5,
+    students: "۱۵۰+",
+    image:
+        "/images/fitness-46.png",
+    skills: ["پیلاتس", "تمرینات اصلاحی"],
+    description: "مربی تخصصی پیلاتس و تمرینات اصلاحی",
+    schedule: ["شنبه", "سه‌شنبه", "پنجشنبه"],
+  },
+  {
+    id: 4,
+    name: "الهام کریمی",
+    specialty: "مربی فیتنس",
+    experience: "۳ سال سابقه",
+    rating: 4.7,
+    students: "۷۰+",
+    image:
+     "/images/marketing-4-82.png",
+    skills: ["فیتنس", "تمرین هوازی"],
+    description: "مربی فیتنس و تمرینات هوازی",
+    schedule: ["یکشنبه", "دوشنبه", "چهارشنبه"],
+  },
+  {
+    id: 5,
+    name: "آرزو کریمی",
+    specialty: "مربی کراس‌فیت",
+    experience: "۷ سال سابقه",
+    rating: 4.9,
+    students: "۱۸۰+",
+    image:
+       "/images/running-48.png",
+    skills: ["کراس‌فیت", "تمرین قدرتی", "استقامت"],
+    description: "مربی کراس‌فیت و تمرینات قدرتی و استقامتی",
+    schedule: ["شنبه", "دوشنبه", "پنجشنبه"],
+  },
+  {
+    id: 6,
+    name: "نازنین موسوی",
+    specialty: "مربی تمرینات هوازی",
+    experience: "۴ سال سابقه",
+    rating: 4.8,
+    students: "۱۱۰+",
+    image:
+     "/images/fitness-1-94.png",
+    skills: ["تمرین هوازی", "فیتنس", "آمادگی جسمانی"],
+    description: "مربی تمرینات هوازی و بهبود آمادگی جسمانی",
+    schedule: ["یکشنبه", "سه‌شنبه", "چهارشنبه"],
+  },
+  {
+    id: 7,
+    name: "مهسا نادری",
+    specialty: "مربی بدنسازی بانوان",
+    experience: "۵ سال سابقه",
+    rating: 4.9,
+    students: "۱۳۰+",
+    image:
+  "/images/data-center-1-40.png",
+    skills: ["بدنسازی", "تمرین قدرتی", "فیتنس"],
+    description: "مربی بدنسازی و طراحی برنامه‌های تمرینی",
+    schedule: ["شنبه", "یکشنبه", "چهارشنبه"],
+  },
+  {
+    id: 8,
+    name: "ترانه حسینی",
+    specialty: "مربی حرکات اصلاحی",
+    experience: "۶ سال سابقه",
+    rating: 4.8,
+    students: "۱۰۰+",
+    image:
+       "/images/girl-swimming-87.png",
+    skills: ["حرکات اصلاحی", "انعطاف‌پذیری", "پیلاتس"],
+    description: "مربی حرکات اصلاحی و بهبود الگوهای حرکتی",
+    schedule: ["دوشنبه", "سه‌شنبه", "پنجشنبه"],
+  },
+];

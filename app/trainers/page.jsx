@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import Link from "next/link";
@@ -13,56 +15,7 @@ import {
   Search,
 } from "lucide-react";
 
-const coaches = [
-  {
-    id: 1,
-    name: "سارا محمدی",
-    specialty: "مربی بدنسازی",
-    experience: "۵ سال سابقه",
-    rating: "۴.۹",
-    students: "۱۲۰+",
-    color: "from-pink-500 to-rose-600",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=80",
-    skills: ["بدنسازی", "تمرین قدرتی"],
-  },
-  {
-    id: 2,
-    name: "نگار احمدی",
-    specialty: "مربی یوگا",
-    experience: "۴ سال سابقه",
-    rating: "۴.۸",
-    students: "۹۰+",
-    color: "from-purple-500 to-violet-600",
-    image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&auto=format&fit=crop&q=80",
-    skills: ["یوگا", "انعطاف‌پذیری"],
-  },
-  {
-    id: 3,
-    name: "مریم رضایی",
-    specialty: "مربی پیلاتس",
-    experience: "۶ سال سابقه",
-    rating: "۵.۰",
-    students: "۱۵۰+",
-    color: "from-fuchsia-500 to-pink-600",
-    image:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80",
-    skills: ["پیلاتس", "تمرینات اصلاحی"],
-  },
-  {
-    id: 4,
-    name: "الهام کریمی",
-    specialty: "مربی فیتنس",
-    experience: "۳ سال سابقه",
-    rating: "۴.۷",
-    students: "۷۰+",
-    color: "from-rose-500 to-purple-600",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&auto=format&fit=crop&q=80",
-    skills: ["فیتنس", "تمرین هوازی"],
-  },
-];
+import { trainers } from "../../data/trainers";
 
 export default function CoachesPage() {
   return (
@@ -73,6 +26,7 @@ export default function CoachesPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-gradient-to-bl from-[#db2777] via-[#c026d3] to-[#6d28d9] px-5 py-20 text-white md:py-28">
         <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-pink-300/20 blur-3xl" />
+
         <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-purple-300/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-6xl">
@@ -91,8 +45,9 @@ export default function CoachesPage() {
               </h1>
 
               <p className="mb-8 max-w-xl text-base leading-9 text-white/90 md:text-lg">
-                با مربیانی آشنا شو که می‌تونن در مسیر ورزشی همراهت باشن.
-                تخصص‌ها رو بررسی کن و با توجه به علاقه‌ات انتخاب کن.
+                با مربیانی آشنا شو که می‌تونن در مسیر ورزشی همراهت
+                باشن. تخصص‌ها رو بررسی کن و با توجه به علاقه‌ات
+                انتخاب کن.
               </p>
 
               <a
@@ -153,18 +108,21 @@ export default function CoachesPage() {
 
             <div className="flex items-center gap-3 rounded-2xl border border-pink-100 bg-white px-5 py-4 dark:border-[#432344] dark:bg-[#24142f]">
               <Search size={21} className="text-pink-500" />
+
               <span className="text-sm text-[#756579] dark:text-[#d1bfd9]">
-                ۴ مربی نمونه
+                {trainers.length.toLocaleString("fa-IR")} مربی نمونه
               </span>
             </div>
           </div>
 
+          {/* Trainer Cards */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {coaches.map((coach) => (
+            {trainers.map((coach) => (
               <article
                 key={coach.id}
                 className="group overflow-hidden rounded-[2rem] border border-pink-100 bg-white shadow-xl shadow-pink-200/20 transition duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-[#432344] dark:bg-[#24142f] dark:shadow-black/20 dark:hover:border-pink-500/50"
               >
+                {/* Trainer Image */}
                 <div className="relative h-64 overflow-hidden bg-gradient-to-br from-pink-200 to-purple-200 dark:from-[#402044] dark:to-[#28163b]">
                   <img
                     src={coach.image}
@@ -184,10 +142,12 @@ export default function CoachesPage() {
                       fill="currentColor"
                       className="text-amber-500"
                     />
-                    {coach.rating}
+
+                    {coach.rating.toLocaleString("fa-IR")}
                   </div>
                 </div>
 
+                {/* Trainer Information */}
                 <div className="p-5">
                   <h3 className="mb-2 text-xl font-black">
                     {coach.name}
@@ -198,6 +158,7 @@ export default function CoachesPage() {
                     {coach.experience}
                   </div>
 
+                  {/* Skills */}
                   <div className="mb-5 flex flex-wrap gap-2">
                     {coach.skills.map((skill) => (
                       <span
@@ -209,18 +170,21 @@ export default function CoachesPage() {
                     ))}
                   </div>
 
+                  {/* Students */}
                   <div className="mb-5 flex items-center justify-between border-t border-pink-100 pt-4 text-sm dark:border-[#432344]">
                     <span className="text-[#8b7793] dark:text-[#c3aecf]">
                       هنرجویان
                     </span>
+
                     <span className="font-bold text-purple-700 dark:text-purple-300">
                       {coach.students}
                     </span>
                   </div>
 
+                  {/* Profile Link */}
                   <Link
-                    href={`/coaches/${coach.id}`}
-                    className={`flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-l ${coach.color} px-4 py-3 font-bold text-white shadow-lg transition hover:brightness-110`}
+                    href={`/trainers/${coach.id}`}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-l from-pink-500 to-rose-600 px-4 py-3 font-bold text-white shadow-lg transition hover:brightness-110"
                   >
                     مشاهده پروفایل
                     <ArrowLeft size={18} />
@@ -241,6 +205,7 @@ export default function CoachesPage() {
       <section className="px-5 pb-20 md:pb-28">
         <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] bg-gradient-to-l from-[#db2777] via-[#c026d3] to-[#6d28d9] px-7 py-14 text-center text-white shadow-2xl shadow-purple-500/20 md:px-16 md:py-20">
           <div className="absolute -right-16 -top-20 h-64 w-64 rounded-full bg-white/10 blur-2xl" />
+
           <div className="absolute -bottom-24 -left-12 h-64 w-64 rounded-full bg-pink-300/20 blur-2xl" />
 
           <div className="relative">
@@ -269,3 +234,8 @@ export default function CoachesPage() {
     </main>
   );
 }
+
+
+
+
+
