@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏋️ FitBanoo | فیت‌بانو
+## 🖥️ Project Preview
 
-## Getting Started
+### 🏠 Homepage
 
-First, run the development server:
+<p align="center">
+  <img src="./screenshots/homepage.png" alt="FitBanoo Homepage" width="100%" />
+</p>
+
+### 📊 Dashboard
+
+<p align="center">
+  <img src="./screenshots/dashboard.png" alt="FitBanoo Dashboard" width="100%" />
+</p>
+یک پلتفرم ورزشی برای مشاهده کلاس‌های ورزشی، آشنایی با مربیان و مدیریت فعالیت‌های ورزشی.
+
+## ✨ امکانات پروژه
+
+- 🏠 صفحه اصلی با طراحی مدرن و واکنش‌گرا
+- 👩‍🏫 نمایش مربیان ورزشی
+- 🏃 معرفی کلاس‌های ورزشی
+- 📊 داشبورد مدیریت فعالیت‌های ورزشی
+- 📈 نمایش آمار و نمودارهای فعالیت
+- ✏️ امکان ویرایش اطلاعات داشبورد
+- 💾 ذخیره اطلاعات داشبورد در مرورگر با LocalStorage
+- 📱 طراحی واکنش‌گرا برای موبایل و دسکتاپ
+
+## 🛠 تکنولوژی‌های استفاده‌شده
+
+- Next.js
+- React
+- JavaScript
+- Tailwind CSS
+- Lucide React
+- LocalStorage
+
+## 🚀 اجرای پروژه
+
+ابتدا مخزن را دریافت کن:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+و وارد پوشه پروژه شو:
+
+```bash
+cd fitbanoo
+```
+
+وابستگی‌ها را نصب کن:
+
+```bash
+npm install
+```
+
+سرور توسعه را اجرا کن:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+سپس آدرس زیر را در مرورگر باز کن:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 ساختار پروژه
 
-## Learn More
+```text
+fitbanoo/
+├── app/
+│   ├── components/
+│   ├── dashboard/
+│   ├── api/
+│   ├── layout.js
+│   └── page.js
+├── public/
+├── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 👩‍💻 توسعه‌دهنده
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+این پروژه با هدف تمرین و توسعه مهارت‌های طراحی و برنامه‌نویسی وب ساخته شده است.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Project:** FitBanoo  
+**Framework:** Next.js
