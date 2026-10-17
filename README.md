@@ -4,13 +4,13 @@
 ### 🏠 Homepage
 
 <p align="center">
-  <img src="./screenshots/homepage.png" alt="FitBanoo Homepage" width="100%" />
+  <img src="./public/images/screenshots/homepage.png" alt="FitBanoo Homepage" width="100%" />
 </p>
 
 ### 📊 Dashboard
 
 <p align="center">
-  <img src="./screenshots/dashboard.png" alt="FitBanoo Dashboard" width="100%" />
+  <img src="./public/images/screenshots/dashboard.png" alt="FitBanoo Dashboard" width="100%" />
 </p>
 یک پلتفرم ورزشی برای مشاهده کلاس‌های ورزشی، آشنایی با مربیان و مدیریت فعالیت‌های ورزشی.
 
