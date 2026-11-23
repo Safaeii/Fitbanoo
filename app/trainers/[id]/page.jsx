@@ -1,5 +1,4 @@
 
-
 import {
   Dumbbell,
   Target,
@@ -15,9 +14,13 @@ import {
   GraduationCap,
   HeartPulse,
   MessageCircle,
-X,
+  X,
 } from "lucide-react";
+
 import ContactModal from "../../components/ContactModal";
+
+export const instant = false;
+
 export default async function TrainerDetails({ params }) {
   const { id } = await params;
 
@@ -77,7 +80,6 @@ export default async function TrainerDetails({ params }) {
             <div className="rounded-2xl bg-pink-50 p-5 dark:bg-gray-800">
               <div className="mb-3 flex items-center gap-2 text-pink-600 dark:text-pink-300">
                 <Clock size={20} />
-
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   سابقه فعالیت
                 </p>
@@ -91,7 +93,6 @@ export default async function TrainerDetails({ params }) {
             <div className="rounded-2xl bg-purple-50 p-5 dark:bg-gray-800">
               <div className="mb-3 flex items-center gap-2 text-purple-600 dark:text-purple-300">
                 <Award size={20} />
-
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   تخصص اصلی
                 </p>
@@ -105,7 +106,6 @@ export default async function TrainerDetails({ params }) {
             <div className="rounded-2xl bg-pink-50 p-5 dark:bg-gray-800">
               <div className="mb-3 flex items-center gap-2 text-pink-600 dark:text-pink-300">
                 <Activity size={20} />
-
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   نوع تمرین
                 </p>
@@ -119,7 +119,6 @@ export default async function TrainerDetails({ params }) {
             <div className="rounded-2xl bg-purple-50 p-5 dark:bg-gray-800">
               <div className="mb-3 flex items-center gap-2 text-purple-600 dark:text-purple-300">
                 <UserRound size={20} />
-
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   شماره پروفایل
                 </p>
@@ -168,33 +167,21 @@ export default async function TrainerDetails({ params }) {
           <div className="space-y-4">
 
             <div className="flex items-center gap-3 rounded-2xl border border-gray-100 p-4 dark:border-gray-800">
-              <CheckCircle2
-                size={21}
-                className="shrink-0 text-green-500"
-              />
-
+              <CheckCircle2 size={21} className="shrink-0 text-green-500" />
               <span className="text-gray-700 dark:text-gray-300">
                 طراحی برنامه تمرینی متناسب با سطح ورزشکار
               </span>
             </div>
 
             <div className="flex items-center gap-3 rounded-2xl border border-gray-100 p-4 dark:border-gray-800">
-              <CheckCircle2
-                size={21}
-                className="shrink-0 text-green-500"
-              />
-
+              <CheckCircle2 size={21} className="shrink-0 text-green-500" />
               <span className="text-gray-700 dark:text-gray-300">
                 آموزش اصول صحیح اجرای حرکات ورزشی
               </span>
             </div>
 
             <div className="flex items-center gap-3 rounded-2xl border border-gray-100 p-4 dark:border-gray-800">
-              <CheckCircle2
-                size={21}
-                className="shrink-0 text-green-500"
-              />
-
+              <CheckCircle2 size={21} className="shrink-0 text-green-500" />
               <span className="text-gray-700 dark:text-gray-300">
                 برنامه‌ریزی برای بهبود قدرت و استقامت عضلانی
               </span>
@@ -211,7 +198,6 @@ export default async function TrainerDetails({ params }) {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
 
-            {/* برنامه بدنسازی */}
             <div className="rounded-2xl border border-pink-100 p-5 transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-pink-600 dark:bg-gray-800 dark:text-pink-300">
                 <Dumbbell size={25} />
@@ -226,7 +212,6 @@ export default async function TrainerDetails({ params }) {
               </p>
             </div>
 
-            {/* تمرینات هدفمند */}
             <div className="rounded-2xl border border-purple-100 p-5 transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-100 text-purple-600 dark:bg-gray-800 dark:text-purple-300">
                 <Target size={25} />
@@ -241,7 +226,6 @@ export default async function TrainerDetails({ params }) {
               </p>
             </div>
 
-            {/* بررسی روند پیشرفت */}
             <div className="rounded-2xl border border-pink-100 p-5 transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-pink-600 dark:bg-gray-800 dark:text-pink-300">
                 <ClipboardList size={25} />
@@ -256,7 +240,6 @@ export default async function TrainerDetails({ params }) {
               </p>
             </div>
 
-            {/* آمادگی جسمانی */}
             <div className="rounded-2xl border border-purple-100 p-5 transition hover:-translate-y-1 hover:shadow-md dark:border-gray-800">
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-purple-100 text-purple-600 dark:bg-gray-800 dark:text-purple-300">
                 <HeartPulse size={25} />
@@ -311,7 +294,7 @@ export default async function TrainerDetails({ params }) {
             </div>
           </div>
 
-         <ContactModal />
+          <ContactModal />
         </section>
 
       </div>

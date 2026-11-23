@@ -1,5 +1,7 @@
-import ClassRegistration from "../../components/ClassRegistration"
 
+import ClassRegistration from "../../components/ClassRegistration";
+
+export const instant = false;
 
 export default async function ClassDetailsPage({ params }) {
   const { id } = await params;
@@ -31,9 +33,7 @@ export default async function ClassDetailsPage({ params }) {
 
   return (
     <main className="min-h-screen bg-pink-50 dark:bg-gray-950 p-6 md:p-12">
-
       <div className="max-w-3xl mx-auto bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-lg">
-
         <span className="text-pink-600 dark:text-pink-300">
           {selectedClass.category}
         </span>
@@ -65,7 +65,8 @@ export default async function ClassDetailsPage({ params }) {
             </p>
           </div>
         </div>
-<ClassRegistration className={selectedClass.name} />
+
+        <ClassRegistration className={selectedClass.name} />
       </div>
     </main>
   );
